@@ -1,0 +1,80 @@
+* { 
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto 0;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.profile {
+
+}
+
+.profile-image {
+  max-width: 256px;
+}
+
+.profile-text {
+  text-align: center;
+}
+
+.portfolio {
+  width: 90%;
+}
+
+.portfolio-image {
+  max-width: 40%;
+  margin: auto 0;
+  display: block;
+}
+
+.portfolio-text {
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-family: 'Bebas Neue', cursive;
+  margin: auto;
+  text-align: center;
+
+}
+
+h3 {
+  font-weight: 400;
+}
+
+body {
+  font-weight: 100;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+  .portfolio-image {
+    margin: auto;
+    width: 80%;
+    max-width: 256px;
+  }
+
+  .profile-image {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 769px) {
+
+}
+
