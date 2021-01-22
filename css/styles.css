@@ -164,8 +164,10 @@ footer {
   }
 
   article {
+    height: 350px;
     display: inline-block;
     width: calc(48% - 4px);
+    vertical-align: middle;
   }
 
   .profile-image {
