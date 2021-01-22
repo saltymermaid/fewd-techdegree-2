@@ -4,10 +4,6 @@
   margin: 0;
 }
 
-html {
-  height: 100%;
-}
-
 .container {
   width: 90%;
   margin: 0 auto;
@@ -25,6 +21,8 @@ h2 {
   margin: auto;
   padding: 10vh 0;
   text-align: center;
+  border-top: 4px solid #f7f7f7;
+
 }
 
 h3 {
@@ -38,12 +36,7 @@ p {
   padding-bottom: 5vh;
 }
 
-body {
-  font-weight: 100;
-  height: 100%;
-}
-
-.section-button, .portfolio h2, h3, .portfolio, .portfolio-text {
+.portfolio h2, h3, .portfolio, .portfolio-text, .animal, .animal h2, article {
   background-color: white;
 }
 
@@ -53,6 +46,7 @@ body {
   font-family: 'Fjalla One', sans-serif;
   text-transform: uppercase;
   font-size: 14px;
+  color: #939597;
 }
 
 a {
@@ -75,16 +69,23 @@ a:visited {
 
 .profile-text, .portfolio-text {
   text-align: center;
+  height: 20vh;
 }
 
-.portfolio {
-  width: 90%;
+.portfolio, .animal {
+  width: 95%;
   margin: 0 auto;
 }
 
 .portfolio-image {
-  max-width: 40%;
   margin: 0 auto;
+  display: block;
+}
+
+img {
+  width: 90%;
+  height: auto;
+  margin: auto;
   display: block;
 }
 
@@ -116,11 +117,12 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) {
   .section-button {
     display: block;
     width: 90%;
     margin: 5px auto;
+    background-color: white;
   }
 
   .container {
@@ -144,15 +146,49 @@ footer {
   .profile-image {
     width: 70%;
   }
+
+  .footer-links {
+    display: none;
+  }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
+  .container {
+    margin: auto;
+    width: 100%;
+  }
+  
   .section-button {
-    display: inline;
+    font-size: 12px;
+  }
+
+  nav {
+    width: 40%;
+    text-align: center;
+    margin: 5vh auto;
+    display: block;
+  }
+
+  article {
+    display: inline-block;
+    width: calc(48% - 4px);
+  }
+
+  .profile-image {
+    width: 90%;
+    display: block;
+    margin: auto;
   }
 
   .link-to-top {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  article {
+    display: inline-block;
+    width: calc(33%);
   }
 }
 
