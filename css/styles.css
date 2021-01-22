@@ -75,11 +75,16 @@ a:visited {
 .profile-text, .portfolio-text {
   text-align: center;
   height: 20vh;
-}
-
-.profile-text, .portfolio-text, .contact-text {
   width: 90%;
   margin: auto;
+}
+
+.contact-text {
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  margin: auto;
+  color: #939597;
 }
 
 .animal {
@@ -106,6 +111,7 @@ img {
 
 .contact-details {
   color: #939597;
+  margin-left: 0.7em;
 }
 
 footer {
