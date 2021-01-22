@@ -123,15 +123,20 @@ footer {
 }
 
 .link-to-top {
-  text-transform: uppercase;
   float: right;
   display: block;
-  height: 12px;
-  line-height: 12px;
 }
 
-.footer-links {
+.link-to-top, .link-to-section {
+  text-transform: uppercase;
+}
+
+.link-to-section {
   display: none;
+}
+
+.footer-links li:last-child {
+  margin-right: 0;
 }
 
 /* MEDIA QUERIES */
@@ -171,6 +176,16 @@ footer {
 
   .link-to-top {
     display: none;
+  }
+
+  .footer-links {
+    display: block;
+    float: right;
+  }
+
+  .link-to-section {
+    display: inline;
+    margin: 0 0.7em;
   }
 }
 
