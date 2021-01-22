@@ -36,21 +36,27 @@ p {
   padding-bottom: 5vh;
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 .portfolio h2, h3, .portfolio, .portfolio-text, .animal, .animal h2, article {
   background-color: white;
 }
 
-.section-button {
+.nav-links li {
   border: none;
   padding: 10px;
+  text-align: center;
   font-family: 'Fjalla One', sans-serif;
   text-transform: uppercase;
   font-size: 14px;
+  background-color: white;
   color: #939597;
   display: block;
-  width: 90%;
   margin: 5px auto;
-  background-color: white;
+  width: 90%;
 }
 
 a {
@@ -87,11 +93,6 @@ a:visited {
   color: #939597;
 }
 
-.animal {
-  width: 95%;
-  margin: 0 auto;
-}
-
 .portfolio {
   width: 100%;
 }
@@ -107,6 +108,11 @@ img {
   height: auto;
   margin: auto;
   display: block;
+}
+
+.animal {
+  width: 95%;
+  margin: 0 auto;
 }
 
 .contact-details {
@@ -128,17 +134,14 @@ footer {
   line-height: 12px;
 }
 
-.link-to-top {
+.footer-links li {
+  text-transform: uppercase;
+  display: none;
+}
+
+.footer-links li:first-child {
   float: right;
   display: block;
-}
-
-.link-to-top, .link-to-section {
-  text-transform: uppercase;
-}
-
-.link-to-section {
-  display: none;
 }
 
 .footer-links li:last-child {
@@ -157,14 +160,22 @@ footer {
     width: 95%;
     margin: 0 auto;
   }
-  
-  .section-button {
+
+  .nav-links {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  .nav-links li {
+    display: inline;
+    margin: 0 0.7em;
     font-size: 12px;
+    background-color: #f7f7f7;
   }
 
   nav {
     width: 40%;
-    text-align: center;
     margin: 5vh auto;
     display: block;
   }
@@ -182,18 +193,18 @@ footer {
     margin: auto;
   }
 
-  .link-to-top {
-    display: none;
-  }
-
-  .footer-links {
+   .footer-links {
     display: block;
     float: right;
   }
 
-  .link-to-section {
+  .footer-links li {
     display: inline;
     margin: 0 0.7em;
+  }
+
+  .footer-links li:first-child {
+    display: none;
   }
 }
 
