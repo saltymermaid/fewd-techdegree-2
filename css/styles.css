@@ -15,6 +15,7 @@
 h1 {
   font-family: 'Fjalla One', sans-serif;
   text-align: center;
+  margin: 5vh auto;
 }
 
 h2 {
@@ -233,7 +234,7 @@ footer {
   }
 
   #portfolio, #animal {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -260,13 +261,40 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  h1 {
+    float: left;
+    margin-top: 0;
+    vertical-align: bottom;
+  }
+
+  nav {
+    width: 95%;
+  }
+
+  .nav-links {
+    float: right;
+  }
+
+  .nav-links li {
+    padding-bottom: 0px;
+  }
+
+  .nav-links li:last-child {
+    margin-right: 0;
+  }
+
+  #portfolio, #animal {
+    width: 95%;
+    margin: 0 auto;
+  }
+
   article {
     display: inline-block;
     width: calc(33%);
   }
 
   .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 }
