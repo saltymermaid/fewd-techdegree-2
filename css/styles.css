@@ -2,8 +2,16 @@
 
 * { 
   box-sizing: border-box;
-  background-color: #f7f7f7;
+  background-color: var(--main-bg-color);
   margin: 0;
+  color: var(--main-text-color);
+}
+
+:root {
+  --main-bg-color: #f7f7f7;
+  --secondary-bg-color: white;
+  --main-text-color: black;
+  --secondary-text-color: #939597;
 }
 
 .container {
@@ -24,7 +32,7 @@ h2 {
   margin: auto;
   padding: 10vh 10vw;
   text-align: center;
-  border-top: 4px solid #f7f7f7;
+  border-top: 4px solid var(--main-bg-color);
 
 }
 
@@ -45,12 +53,12 @@ ul {
 }
 
 a {
-  color: black;
+  color: var(--main-text-color);
   text-decoration: none;
 }
 
 a:visited {
-  color: black;
+  color: var(--main-text-color);
 }
 
 .clearfix {
@@ -58,7 +66,7 @@ a:visited {
 }
 
 #portfolio h2, h3, #portfolio, .portfolio-text, #animal, #animal h2, article, .nav-links li a {
-  background-color: white;
+  background-color: var(--secondary-bg-color);
 }
 
 img {
@@ -76,8 +84,8 @@ img {
   font-family: 'Fjalla One', sans-serif;
   text-transform: uppercase;
   font-size: 14px;
-  background-color: white;
-  color: #939597;
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
   display: block;
   margin: 5px auto;
   width: 90%;
@@ -142,11 +150,11 @@ img {
   max-width: 400px;
   text-align: center;
   margin: auto;
-  color: #939597;
+  color:var(--secondary-text-color);
 }
 
 .contact-details {
-  color: #939597;
+  color: var(--secondary-text-color);
   margin-left: 0.7em;
 }
 
@@ -204,11 +212,11 @@ footer {
     display: inline;
     margin: 0 0.7em;
     font-size: 12px;
-    background-color: #f7f7f7;
+    background-color: var(--main-bg-color);
   }
 
   .nav-links li a {
-    background-color: #f7f7f7;
+    background-color: var(--main-bg-color);
   }
 
   #profile {
@@ -240,7 +248,7 @@ footer {
   }
 
   article {
-    height: 350px;
+    height: 375px;
     display: inline-block;
     width: calc(48% - 4px);
     vertical-align: middle;
