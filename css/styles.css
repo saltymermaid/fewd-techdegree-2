@@ -8,10 +8,11 @@
 }
 
 :root {
-  --main-bg-color: #ccc5b9;
-  --secondary-bg-color: #fffcf2;
-  --main-text-color: #403d39;
-  --secondary-text-color: #eb5e28;
+  --main-bg-color: #D4F0F8;
+  --secondary-bg-color: #158AA1;
+  --main-text-color: #2F4858;
+  --secondary-text-color: #D4F0F8;
+  --box-shadow-color: rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -23,28 +24,33 @@
 h1 {
   font-family: 'Fjalla One', sans-serif;
   text-align: center;
-  margin: 5vh auto;
+  margin: 2vh auto;
 }
 
 h2 {
   font-family: 'Fjalla One', sans-serif;
   text-transform: uppercase;
   margin: auto;
-  padding: 10vh 10vw;
+  padding: 2vh 2vw;
   text-align: center;
   border-top: 4px solid var(--main-bg-color);
-
+  color: var(--secondary-text-color)
 }
 
 h3 {
   font-family: 'Fjalla One', sans-serif;
   text-align: center;
-  padding: 5vh 0;
+  padding: 1vh 0;
+  color: var(--secondary-text-color)
 }
 
 p {
   text-align: center;
-  padding-bottom: 5vh;
+  padding-bottom: 2vh;
+}
+
+article > p {
+  color: var(--secondary-text-color)
 }
 
 ul {
@@ -59,6 +65,10 @@ a {
 
 a:visited {
   color: var(--main-text-color);
+}
+
+.nav-links a, .nav-links a:visited {
+  color: var(--secondary-text-color);
 }
 
 .clearfix {
@@ -85,7 +95,6 @@ img {
   text-transform: uppercase;
   font-size: 14px;
   background-color: var(--secondary-bg-color);
-  color: var(--secondary-text-color);
   display: block;
   margin: 5px auto;
   width: 90%;
@@ -94,15 +103,16 @@ img {
 /* PROFILE SECTION */
 
 #profile {
-  margin-bottom: 10vh;
+  margin-bottom: 20px;
   display: block;
 }
 
 .profile-image {
   width: 70%;
-  max-width: 256px;
-  margin: 10vh auto;
+  max-width: 290px;
+  margin: 20px auto;
   display: block;
+  box-shadow: 0 2px 2px 0 var(--box-shadow-color), 0 6px 20px 0 var(--box-shadow-color);
 }
 
 .profile-text {
@@ -119,14 +129,15 @@ img {
 }
 
 .portfolio-image {
-  margin: 0 auto;
+  margin: 20px auto;
   display: block;
-  max-width: 290px;
+  max-width: 360px;
+  box-shadow: 0 2px 2px 0 var(--box-shadow-color), 0 6px 20px 0 var(--box-shadow-color);
 }
 
 .portfolio-text {
   text-align: center;
-  max-width: 290px;
+  max-width: 360px;
   margin: auto;
 }
 
@@ -139,8 +150,9 @@ img {
 }
 
 #animal img {
+  width: 50%;
   display: block;
-  margin: 10vh auto;
+  margin: 2vh auto;
 }
 
 /* CONTACT INFO */
@@ -150,12 +162,16 @@ img {
   max-width: 400px;
   text-align: center;
   margin: auto;
-  color:var(--secondary-text-color);
+  color:var(--primary-text-color);
 }
 
 .contact-details {
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
   margin-left: 0.7em;
+}
+
+#contact > h2 {
+  color: var(--primary-text-color)
 }
 
 /* FOOTER */
@@ -163,7 +179,7 @@ img {
 footer {
   font-family: 'Fjalla One', sans-serif;
   border-top: 1px solid var(--main-text-color);
-  padding: 10vh 0;
+  padding: 2vh 0;
   margin: 20px 5vw;
 }
 
@@ -197,8 +213,8 @@ footer {
   }
 
   nav {
-    width: 40%;
-    margin: 5vh auto;
+    width: 60%;
+    margin: 2vh auto;
     display: block;
   }
 
@@ -211,17 +227,22 @@ footer {
   .nav-links li {
     display: inline;
     margin: 0 0.7em;
-    font-size: 12px;
+    font-size: 2vh;
     background-color: var(--main-bg-color);
   }
 
   .nav-links li a {
+    color: var(--main-text-color);
     background-color: var(--main-bg-color);
+  }
+
+  .nav-links li a:visited {
+    color: var(--main-text-color)
   }
 
   #profile {
     width: 95%;
-    margin: 10vh auto;
+    margin: 2vh auto;
     text-align: center;
   }
 
@@ -231,8 +252,13 @@ footer {
 
   .profile-image {
     width: 30%;
+    max-width: 512px;
     margin: auto;
     float: right;
+  }
+
+  .portfolio-image, .portfolio-text {
+    max-width: 400px;
   }
 
   .profile-text {
@@ -248,10 +274,9 @@ footer {
   }
 
   article {
-    height: 375px;
     display: inline-block;
     width: calc(48% - 4px);
-    vertical-align: middle;
+    vertical-align: top;
   }
 
    .footer-links {
